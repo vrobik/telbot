@@ -1,8 +1,8 @@
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 const { Markup, Stage, session, Telegraf } = require("telegraf");
 
-const result = dotenv.config();
-if (result.error) throw result.error;
+// const result = dotenv.config();
+// if (result.error) throw result.error;
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 const DEV = true;
