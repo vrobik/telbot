@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  bot:
+    build:
+      context: .
+      args:
+        - service_src=./
+    command: bash -c "npm run start"
+    restart: on-failure
+    env_file:
+      - ./.env
+    volumes:
+      - ./:/usr/src
